@@ -55,24 +55,21 @@ Before you begin, ensure you have met the following requirements:
    - Download from [wkhtmltopdf.org](https://wkhtmltopdf.org/downloads.html)
 
 ### macOS/Linux Setup
-
-```bash
-# macOS (using Homebrew)
-brew install python tesseract wkhtmltopdf
+  bash
+  # macOS (using Homebrew)
+      brew install python tesseract wkhtmltopdf
 
 # Ubuntu/Debian
-sudo apt update
-sudo apt install python3 python3-pip tesseract-ocr wkhtmltopdf
-Project Setup
+    sudo apt update
+    sudo apt install python3 python3-pip tesseract-ocr wkhtmltopdf
+## Project Setup
 Clone the repository:
-
-bash
-git clone https://github.com/yourusername/homework-helper.git
-cd homework-helper
+    bash
+    git clone https://github.com/yourusername/homework-helper.git
+    cd homework-helper
 Create and activate virtual environment:
-
-bash
-python -m venv homework-helper-env
+    bash
+    python -m venv homework-helper-env
 
 # Windows
 homework-helper-env\Scripts\activate
@@ -80,11 +77,9 @@ homework-helper-env\Scripts\activate
 # macOS/Linux
 source homework-helper-env/bin/activate
 Install dependencies:
-
 bash
 pip install -r requirements.txt
 Create a .env file with your API keys:
-
 env
 OPENAI_API_KEY=your_openai_api_key
 MPESA_CONSUMER_KEY=your_mpesa_consumer_key
@@ -94,8 +89,7 @@ MPESA_SHORTCODE=your_mpesa_shortcode
 Running the Application
 bash
 streamlit run app.py
-The application will be available at:
-
+# The application will be available at:
 Local URL: http://localhost:8501
 
 Network URL: http://<your-ip>:8501
@@ -133,30 +127,21 @@ bash
 pip install --upgrade pip setuptools wheel
 pip install --only-binary=:all: Pillow
 Tesseract Not Found:
-
-python
-# Add this to ocr.py if Tesseract isn't in PATH
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+    python
+    # Add this to ocr.py if Tesseract isn't in PATH
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 wkhtmltopdf Issues:
-
 Ensure the binary is in your PATH
-
 On Windows, you may need to specify the path in code:
-
-python
-config = pdfkit.configuration(wkhtmltopdf=r'C:\path\to\wkhtmltopdf.exe')
+    python
+    config = pdfkit.configuration(wkhtmltopdf=r'C:\path\to\wkhtmltopdf.exe')
 # Contributing
-To contribute to Homework Helper, follow these steps:
-
-Fork this repository
-
-Create a branch (git checkout -b feature/amazing-feature)
-
-Commit your changes (git commit -m 'Add some amazing feature')
-
-Push to the branch (git push origin feature/amazing-feature)
-
-Open a Pull Request
+  1. To contribute to Homework Helper, follow these steps:
+  2. Fork this repository
+  3. Create a branch (git checkout -b feature/amazing-feature)
+  4. Commit your changes (git commit -m 'Add some amazing feature')
+  5.  Push to the branch (git push origin feature/amazing-feature)
+  6. Open a Pull Request
 
 # License
 This project uses the MIT License.
