@@ -65,7 +65,7 @@ Before you begin, ensure you have met the following requirements:
 ## Project Setup
 Clone the repository:
     bash
-    git clone https://github.com/yourusername/homework-helper.git
+    git clone https://https://github.com/Bettylizzie/Homework-Helper.git
     cd homework-helper
 Create and activate virtual environment:
     bash
